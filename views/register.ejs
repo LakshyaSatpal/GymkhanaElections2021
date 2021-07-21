@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gymkhana Elections 2021 | Register</title>
+    <%- include("partials/headLinks") %>
+  </head>
+  <body>
+    <%- include("partials/nav") %>
+    <div class="container register-form-container">
+      <form action="/register" method="POST" enctype="multipart/form-data">
+        <div>
+          <label for="name">Name</label>
+          <input type="text" name="name" placeholder="Full Name" required />
+        </div>
+        <div>
+          <label for="post">Post</label>
+          <select name="post" id="post">
+            <option value disabled selected>--Select an Option--</option>
+            <option value="Vice President">Vice President</option>
+            <option value="General Secretary: Sports and Games">
+              General Secretary: Sports and Games
+            </option>
+            <option value="General Secretary: Social and Cultural">
+              General Secretary: Social and Cultural
+            </option>
+            <option value="General Secretary: Technology">
+              General Secretary: Technology
+            </option>
+            <option value="General Secretary: Students Welfare (Male)">
+              General Secretary: Students Welfare (Male)
+            </option>
+            <option value="General Secretary: Students Welfare (Female)">
+              Geneal Secretary: Students Welfare (Female)
+            </option>
+            <option value="Secretary: Aquatics">Secretary: Aquatics</option>
+            <option value="Secretary: Athletics">Secretary: Athletics</option>
+            <option value="Secretary: Badminton">Secretary: Badminton</option>
+            <option value="Secretary: Basketball">Secretary: Basketball</option>
+            <option value="Secretary: Cricket">Secretary: Cricket</option>
+            <option value="Secretary: Football">Secretary: Football</option>
+            <option value="Secretary: Gymnasium and Weightlifting">
+              Secretary: Gymnasium and Weightlifting
+            </option>
+            <option value="Secretary: Indoor Game">
+              Secretary: Indoor Game
+            </option>
+            <option value="Secretary: Squash">Secretary: Squash</option>
+            <option value="Secretary: Tennis">Secretary: Tennis</option>
+            <option value="Secretary: Volleyball">Secretary: Volleyball</option>
+            <option value="Secretary: Dramatics">Secretary: Dramatics</option>
+            <option value="Secretary: Journal">Secretary: Journal</option>
+            <option value="Secretary: Literary">Secretary: Literary</option>
+            <option value="Secretary: Films and Photography">
+              Secretary: Films and Photography
+            </option>
+            <option value="Secretary: Fine Arts and Modeling">
+              Secretary: Fine Arts and Modeling
+            </option>
+            <option value="Secretary: Knowledge Cup">
+              Secretary: Knowledge Cup
+            </option>
+            <option value="Secretary: Application Cup">
+              Secretary: Application Cup
+            </option>
+            <option value="Secretary: Innovation Cup">
+              Secretary: Innovation Cup
+            </option>
+            <option value="Secretary: Strategy Cup">
+              Secretary: Strategy Cup
+            </option>
+            <option value="Secretary: Academic Help">
+              Secretary: Academic Help
+            </option>
+            <option value="Secretary: Community and Crisis">
+              Secretary: Community and Crisis
+            </option>
+          </select>
+        </div>
+        <div>
+          <label for="intro"
+            >Detailed Introduction (Also provide drive link of your SOP in this
+            )</label
+          >
+          <textarea
+            name="intro"
+            id="intro"
+            placeholder="Introduction"
+            required
+            minlength="50"
+          ></textarea>
+        </div>
+        <div>
+          <label for="poster">Upload Poster</label>
+          <input
+            type="file"
+            name="poster"
+            required
+            accept="image/png, image/gif, image/jpeg"
+          />
+        </div>
+        <div>
+          <label for="email">Email</label>
+          <input
+            type="email"
+            name="email"
+            required
+            placeholder="Email Address"
+          />
+        </div>
+        <div>
+          <label for="phone">Phone</label>
+          <input
+            type="number"
+            name="phone"
+            required
+            placeholder="Phone number"
+          />
+        </div>
+        <div>
+          <label for="fblink">Facebook Profile Link</label>
+          <input
+            type="text"
+            name="fblink"
+            required
+            placeholder="Profile link"
+          />
+        </div>
+        <div class="register-warn">
+          <p>
+            Please check your entered details carefully, once submitted these
+            cannot be changed later.
+          </p>
+        </div>
+        <div class="submit-btn">
+          <button type="submit" class="btn btn-white">Register</button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>

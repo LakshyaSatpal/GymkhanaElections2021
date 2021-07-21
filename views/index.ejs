@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gymkhana Elections 2021</title>
+    <%- include("partials/headLinks") %>
+  </head>
+  <body>
+    <%- include("partials/navhome") %>
+    <div class="container register-section">
+      <div class="register-heading">You are standing for Election?</div>
+      <div class="register-byline">Get yourself registered and boost your Election Campaigning</div>
+      <div class="register-main">
+        <a href="/register" class="btn btn-white">Register</a>
+      </div>
+    </div>
+    <main>
+      <div class="container main-container">
+        <div class="side-nav">
+          <ul>
+            <li class=<%= post == "all" ? "active" : "" %>><a href="/">All</a><div class="down-btn"><i class="fas fa-chevron-down"></i></div></li>
+            <li class=<%= post === "Vice President" ? "active" : "" %>><a href="/?post=Vice President">Vice President</a><div class="down-btn"><i class="fas fa-chevron-down"></i></div></li>
+            <li class=<%= post === "General Secretary: Sports and Games" ? "active" : "" %>>
+              <a href="/?post=General Secretary: Sports and Games"
+                >General Secretary: Sports and Games</a
+              ><div class="down-btn"><i class="fas fa-chevron-down"></i></div>
+            </li>
+            <li class=<%= post === "General Secretary: Social and Cultural" ? "active" : "" %>>
+              <a href="/?post=General Secretary: Social and Cultural"
+                >General Secretary: Social and Cultural</a
+              ><div class="down-btn"><i class="fas fa-chevron-down"></i></div>
+            </li>
+            <li class=<%= post === "General Secretary: Technology" ? "active" : "" %>>
+              <a href="/?post=General Secretary: Technology"
+                >General Secretary: Technology</a
+              ><div class="down-btn"><i class="fas fa-chevron-down"></i></div>
+            </li>
+            <li class=<%= post === "General Secretary: Students Welfare (Male)" ? "active" : "" %>>
+              <a href="/?post=General Secretary: Students Welfare (Male)"
+                >General Secretary: Students Welfare (Male)</a
+              ><div class="down-btn"><i class="fas fa-chevron-down"></i></div>
+            </li>
+            <li class=<%= post === "General Secretary: Students Welfare (Female)" ? "active" : "" %>>
+              <a href="/?post=General Secretary: Students Welfare (Female)"
+                >General Secretary: Students Welfare (Female)</a
+              ><div class="down-btn"><i class="fas fa-chevron-down"></i></div>
+            </li>
+            <li class=<%= post === "Secretary: Aquatics" ? "active" : "" %>>
+              <a href="/?post=Secretary: Aquatics">Secretary: Aquatics</a><div class="down-btn"><i class="fas fa-chevron-down"></i></div>
+            </li>
+            <li class=<%= post === "Secretary: Athletics" ? "active" : "" %>>
+              <a href="/?post=Secretary: Athletics">Secretary: Athletics</a><div class="down-btn"><i class="fas fa-chevron-down"></i></div>
+            </li>
+            <li class=<%= post === "Secretary: Badminton" ? "active" : "" %>>
+              <a href="/?post=Secretary: Badminton">Secretary: Badminton</a><div class="down-btn"><i class="fas fa-chevron-down"></i></div>
+            </li>
+            <li class=<%= post === "Secretary: Basketball" ? "active" : "" %>>
+              <a href="/?post=Secretary: Basketball">Secretary: Basketball</a><div class="down-btn"><i class="fas fa-chevron-down"></i></div>
+            </li>
+            <li class=<%= post === "Secretary: Cricket" ? "active" : "" %>>
+              <a href="/?post=Secretary: Cricket">Secretary: Cricket</a><div class="down-btn"><i class="fas fa-chevron-down"></i></div>
+            </li>
+            <li class=<%= post === "Secretary: Football" ? "active" : "" %>>
+              <a href="/?post=Secretary: Football">Secretary: Football</a><div class="down-btn"><i class="fas fa-chevron-down"></i></div>
+            </li>
+            <li class=<%= post === "Secretary: Gymnasium and Weightlifting" ? "active" : "" %>>
+              <a href="/?post=Secretary: Gymnasium and Weightlifting"
+                >Secretary: Gymnasium and Weightlifting</a
+              ><div class="down-btn"><i class="fas fa-chevron-down"></i></div>
+            </li>
+            <li class=<%= post === "Secretary: Indoor Game" ? "active" : "" %>>
+              <a href="/?post=Secretary: Indoor Game">Secretary: Indoor Game</a><div class="down-btn"><i class="fas fa-chevron-down"></i></div>
+            </li>
+            <li class=<%= post === "Secretary: Squash" ? "active" : "" %>><a href="/?post=Secretary: Squash">Secretary: Squash</a><div class="down-btn"><i class="fas fa-chevron-down"></i></div></li>
+            <li class=<%= post === "Secretary: Tennis" ? "active" : "" %>><a href="/?post=Secretary: Tennis">Secretary: Tennis</a><div class="down-btn"><i class="fas fa-chevron-down"></i></div></li>
+            <li class=<%= post === "Secretary: Volleyball" ? "active" : "" %>>
+              <a href="/?post=Secretary: Volleyball">Secretary: Volleyball</a><div class="down-btn"><i class="fas fa-chevron-down"></i></div>
+            </li>
+            <li class=<%= post === "Secretary: Dramatics" ? "active" : "" %>>
+              <a href="/?post=Secretary: Dramatics">Secretary: Dramatics</a><div class="down-btn"><i class="fas fa-chevron-down"></i></div>
+            </li>
+            <li class=<%= post === "Secretary: Journal" ? "active" : "" %>>
+              <a href="/?post=Secretary: Journal">Secretary: Journal</a><div class="down-btn"><i class="fas fa-chevron-down"></i></div>
+            </li>
+            <li class=<%= post === "Secretary: Literary" ? "active" : "" %>>
+              <a href="/?post=Secretary: Literary">Secretary: Literary</a><div class="down-btn"><i class="fas fa-chevron-down"></i></div>
+            </li>
+            <li class=<%= post === "Secretary: Films and Photography" ? "active" : "" %>>
+              <a href="/?post=Secretary: Films and Photography"
+                >Secretary: Films and Photography</a
+              ><div class="down-btn"><i class="fas fa-chevron-down"></i></div>
+            </li>
+            <li class=<%= post === "Secretary: Fine Arts and Modeling" ? "active" : "" %>>
+              <a href="/?post=Secretary: Fine Arts and Modeling"
+                >Secretary: Fine Arts and Modeling</a
+              ><div class="down-btn"><i class="fas fa-chevron-down"></i></div>
+            </li>
+            <li class=<%= post === "Secretary: Knowledge Cup" ? "active" : "" %>>
+              <a href="/?post=Secretary: Knowledge Cup"
+                >Secretary: Knowledge Cup</a
+              ><div class="down-btn"><i class="fas fa-chevron-down"></i></div>
+            </li>
+            <li class=<%= post === "Secretary: Application Cup" ? "active" : "" %>>
+              <a href="/?post=Secretary: Application Cup"
+                >Secretary: Application Cup</a
+              ><div class="down-btn"><i class="fas fa-chevron-down"></i></div>
+            </li>
+            <li class=<%= post === "Secretary: Innovation Cup" ? "active" : "" %>>
+              <a href="/?post=Secretary: Innovation Cup"
+                >Secretary: Innovation Cup</a
+              ><div class="down-btn"><i class="fas fa-chevron-down"></i></div>
+            </li>
+            <li class=<%= post === "Secretary: Strategy Cup" ? "active" : "" %>>
+              <a href="/?post=Secretary: Strategy Cup"
+                >Secretary: Strategy Cup</a
+              ><div class="down-btn"><i class="fas fa-chevron-down"></i></div>
+            </li>
+            <li class=<%= post === "Secretary: Academic Help" ? "active" : "" %>>
+              <a href="/?post=Secretary: Academic Help"
+                >Secretary: Academic Help</a
+              ><div class="down-btn"><i class="fas fa-chevron-down"></i></div>
+            </li>
+            <li class=<%= post === "Secretary: Community and Crisis" ? "active" : "" %>>
+              <a href="/?post=Secretary: Community and Crisis"
+                >Secretary: Community and Crisis</a
+              ><div class="down-btn"><i class="fas fa-chevron-down"></i></div>
+            </li>
+          </ul>
+        </div>
+        <div class="candidates">
+          <div class="list-candidates <%- post === 'all' ? 'full-list-hide' : '' %>">
+            <div class="total">
+              <p>Total Candidates - <%= items.length %></p>
+            </div>
+            <div class="list <%- items.length === 0 ? 'list-hide' : '' %>">
+              <ul>
+                <% items.forEach(function (item, i) { %>
+                <li><a href="#item<%= i %>"><%= item.name %></a></li>
+                <% }) %>
+              </ul>
+            </div>
+          </div>
+          <% items.forEach(function(item, index) { %>
+          <div class="cand-card" id="item<%= index %>">
+            <div class="card-head">
+              <div class="poster">
+                <img
+                  src="data:image/<%=item.poster.contentType%>;base64,
+                  <%=item.poster.data.toString('base64')%>"
+                />
+              </div>
+              <div class="name-post">
+                <p class="name"><%= item.name %></p>
+                <p class="post"><%= item.post %></p>
+              </div>
+            </div>
+            <div class="info">
+              <p><%= item.intro %></p>
+            </div>
+            <div class="contact">
+              <div class="mail-phone">
+                <p class="mail"><%= item.email %></p>
+                <p class="phone"><%= item.phone %></p>
+              </div>
+              <div class="fb">
+                <a href="<%= item.fblink %>" target="_blank"
+                  ><i class="fab fa-facebook-square"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+          <div class="scroll-top">
+            <a href="">Scroll to top</a>
+          </div>
+          <% }) %>
+        </div>
+      </div>
+    </main>
+  </body>
+  <script src="js/main.js"></script>
+</html>
